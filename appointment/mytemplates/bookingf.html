@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<form method="post">
+    {% csrf_token %}
+    <h1>Manual Form </h1>
+    <br>
+    <label> Name </label>
+    {{form.Name}}
+    <br>
+    <br>
+    <label>Mobile_No</label>
+    {{form.Mobile_No}}
+    <br>
+    <br>
+    <label>Address</label>
+    {{form.Address}}
+    <br><br>
+    <label>Age</label>
+    {{form.Age}}
+    <br><br>
+    <label>Gender</label>
+    {{form.Gender}}
+    <br>
+    <br>
+    <label>Account_status</label>
+    {{form.Account_status}}
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
